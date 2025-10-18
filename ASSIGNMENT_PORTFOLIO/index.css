@@ -1,0 +1,66 @@
+/* css/style.css */
+
+/* Basic reset-ish */
+* {
+  box-sizing: border-box;
+}
+
+/* Typography + palette */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: #222;
+  line-height: 1.5;
+  background: #ffffff;
+}
+
+/* Hero */
+.hero {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.hero-photo img {
+  border: 6px solid rgba(4, 21, 47, 0.08);
+  box-shadow: 0 6px 18px rgba(16,24,40,0.06);
+}
+
+/* Minor spacing for sections */
+section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Card image consistent height */
+.card-img-top {
+  object-fit: cover;
+  height: 180px;
+}
+
+/* Buttons hover */
+.btn-primary:hover,
+.btn-outline-primary:hover {
+  transform: translateY(-2px);
+  transition: transform 0.15s ease;
+}
+
+/* Footer small screens spacing */
+footer a {
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .hero {
+    text-align: center;
+  }
+  .hero .hero-content {
+    margin-top: 1rem;
+  }
+  .hero .d-flex {
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) {
+  .hero .hero-photo {
+    max-width: 200px;
+  }
+}
